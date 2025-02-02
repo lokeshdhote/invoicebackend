@@ -20,7 +20,9 @@
   "main": "app.js",
   "scripts": {
     "dev": "nodemon app.js",
-    "start": "nodemon ./bin/www"
+    "start": "npx nodemon",
+    "bulid":"npm install"
+
   },
   "keywords": [],
   "author": "",
