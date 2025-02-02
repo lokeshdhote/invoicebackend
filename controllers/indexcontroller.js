@@ -25,7 +25,7 @@ exports.register = catchAsyncError(async (req, res, next) => {
     }
   });
   exports.loggedin = catchAsyncError(async (req, res) => {
-    const user = await User.findById(req.id.id).exec();
+    const user = await User.findById(req.user.id).exec();
  
     res.status(200).json({ user});
 
