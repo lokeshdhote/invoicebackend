@@ -19,7 +19,7 @@ exports.isLoggedIn = catchAsyncError(async (req, res, next) => {
   }
 
   // Verify the token
-  const decodedData = jwt.verify(token, process.env.JWT_SECRET);
+  const decodedData = jwt.verify(token, process.env.JWT);
   req.user = await user.findById(decodedData.id);
 
   next();
