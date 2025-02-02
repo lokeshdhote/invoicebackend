@@ -13,7 +13,7 @@ const allowedOrigins = [
   "http://localhost:5174",
   "https://frontendinvoice-1.onrender.com",
   "https://www.dets.co.in"
-  ];;
+  ];
 
 
 const mongoose = require("mongoose");
